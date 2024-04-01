@@ -29,3 +29,12 @@ As per docs, the command work as follows:
 For Unraid:
 - Extra Parameters: `--user 99:100`
 - Post Arguments: `"/app/pollenizer --help"` (yes, with double quotes)
+
+See this config example screenshot where:
+- Post arguments is `"/app/pollenizer --seed-dir=/data /torrent-dir /data/torrent-watch"`
+- `/data` is mapped to the same dir as qbit so their paths match
+- a `/torrent-dir` is created that points to BT_backup
+- a `/torrent-watch` dir is created that keeps all the dumped files
+- a `pollenizer.yaml` is mapped into  `/app/pollenizer.yaml` 
+
+![unraid](docs/uraid.png)
